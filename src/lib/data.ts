@@ -102,7 +102,6 @@ export const projects: {
   description: string[];
   github?: string;
   demo?: string;
-  status: "production" | "wip" | "obsolete";
 }[] = [
   {
     title: "Pádel Court Booking System",
@@ -110,7 +109,31 @@ export const projects: {
       "A mobile-friendly platform for booking pádel courts in real-time. Developed with React Native for the frontend and Laravel for the backend.",
       "Includes features for managing schedules, court availability, and user reservations.",
     ],
-    status: "wip",
+  },
+  {
+    title: "BACuba Official Mobile App",
+    description: [
+      "The official application of the non-profit non-governmental organization BAC, for animal care in Cuba. Allows users to make pet reports, find veterinarians, and facilitate adoptions.",
+      "Built with Django for backend, PostgreSQL for database management, and REST APIs for communication.",
+    ],
+  },
+  {
+    title: "Picsribalt",
+    description: [
+      "Designed and developed a visually appealing portfolio website for a professional photographer, showcasing her work and enhancing her online presence.",
+      "Utilized Next.js, Tailwind CSS, and TypeScript to create an intuitive user interface and ensure responsive design across devices.",
+      "Implemented SEO best practices to improve visibility and attract potential clients, resulting in increased engagement and inquiries.",
+    ],
+
+    demo: "https://picsribalt.guilleperez.com",
+  },
+  {
+    title: "KitCar Wash",
+    description: [
+      "Developed a mobile application using React Native for seamlessly booking car wash services in Spain.",
+      "The app integrates a RESTful API for real-time data retrieval and service availability, ensuring a smooth user experience.",
+      "Implemented robust testing strategies to maintain code quality and performance, delivering a reliable solution that enhances the booking process for users.",
+    ],
   },
 ];
 
