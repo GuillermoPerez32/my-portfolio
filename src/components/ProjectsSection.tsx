@@ -48,28 +48,32 @@ export default function ProjectsSection() {
                 </CardContent>
                 {(github || demo) && (
                   <CardFooter className="flex flex-col items-start border-t border-border/30 bg-gradient-to-r from-purple-500/5 to-pink-500/5">
-                    <motion.a
-                      href={github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-8"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <Github className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
-                      View on GitHub 🔗
-                    </motion.a>
-                    <motion.a
-                      href={demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-8"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <MonitorPlay className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
-                      Watch Demo 🔗
-                    </motion.a>
+                    {github && (
+                      <motion.a
+                        href={github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-8"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Github className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
+                        View on GitHub 🔗
+                      </motion.a>
+                    )}
+                    {demo && (
+                      <motion.a
+                        href={demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-8"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <MonitorPlay className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
+                        Watch Demo 🔗
+                      </motion.a>
+                    )}
                   </CardFooter>
                 )}
               </GlassCard>
