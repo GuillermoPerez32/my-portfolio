@@ -74,19 +74,12 @@ export const education = [
 ];
 
 export const skills = {
-  programmingLanguages: [
-    "TypeScript",
-    "JavaScript",
-    "Python",
-    "C#",
-    "Dart",
-    "SQL",
-  ],
+  programmingLanguages: ["TypeScript", "JavaScript", "Python", "C#", "Dart"],
   frontendDevelopment: [
     "React",
-    "Vue 3",
     "React Native",
     "Flutter",
+    "Vue",
     "Tailwind CSS",
     "HTML",
     "CSS",
@@ -104,6 +97,21 @@ export const skills = {
   toolsAndServices: ["Git", "Storybook", "Vitest", "Zustand", "Redux", "Jira"],
 };
 
-export const projects = [];
+export const projects: {
+  title: string;
+  description: string[];
+  github?: string;
+  demo?: string;
+  status: "production" | "wip" | "obsolete";
+}[] = [
+  {
+    title: "Pádel Court Booking System",
+    description: [
+      "A mobile-friendly platform for booking pádel courts in real-time. Developed with React Native for the frontend and Laravel for the backend.",
+      "Includes features for managing schedules, court availability, and user reservations.",
+    ],
+    status: "wip",
+  },
+];
 
 export const awards = [];
