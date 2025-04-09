@@ -1,4 +1,3 @@
-import React from "react";
 import { awards } from "@/lib/data";
 import { Trophy } from "lucide-react";
 import MotionWrapper from "./MotionWrapper";
