@@ -104,6 +104,24 @@ export const projects: {
   demo?: string;
 }[] = [
   {
+    title: "PrimeVIP",
+    description: [
+      "A luxury transportation booking platform, including buses and limousines, that allows users to easily make reservations.",
+      "Developed with React+Vite for the web frontend and Laravel for the backend.",
+    ],
+    demo: "https://primevip.guilleperez.com",
+    github: "https://github.com/GuillermoPerez32/prime-vip",
+  },
+  {
+    title: "Chatrium",
+    description: [
+      "A real-time enterprise instant messaging application built for internal communications.",
+      "Developed with React for the frontend, and Node.js with WebSocket for real-time communication.",
+      "Includes features like direct messaging, group chats, notifications, and file sharing.",
+    ],
+    github: "https://github.com/GuillermoPerez32/chatrium",
+  },
+  {
     title: "Pádel Court Booking System",
     description: [
       "A mobile-friendly platform for booking pádel courts in real-time. Developed with React Native for the frontend and Laravel for the backend.",
